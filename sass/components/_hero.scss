@@ -1,10 +1,13 @@
 .hero {
-    text-align: center;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     padding: 118px 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -12,6 +15,7 @@
 }
 
 .hero__title {
+    text-align: center;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 26px;
