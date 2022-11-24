@@ -82,3 +82,11 @@
     letter-spacing: 0.02em;
     color: $hover-color;
 }
+.mobile__link::after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 22px;
+    transform: rotate(90deg);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
