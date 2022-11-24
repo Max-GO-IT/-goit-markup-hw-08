@@ -1,0 +1,45 @@
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 30px;
+}
+// .clients-item {
+//    margin: 15px;
+// }
+
+.team-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 92px;
+    border: 1px solid $icons-color;
+    border-radius: 4px;
+    color: $icons-color;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid $hover-color;
+    color: $hover-color;
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
