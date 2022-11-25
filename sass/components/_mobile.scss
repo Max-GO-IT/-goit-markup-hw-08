@@ -37,20 +37,6 @@
     &-active {
     color: $hover-color;}
 }
-.mobile__cross-icon {
-    position: absolute;
-    top:0;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    margin-top: 21px;
-    margin-right: 25px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-    fill: $hover-color;}
-}
 .mobile__contacts-item {
     margin-left: 40px;
 

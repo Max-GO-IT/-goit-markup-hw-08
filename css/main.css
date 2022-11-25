@@ -80,17 +80,23 @@ img {
   color: #212121;
 }
 
-.mobile-icon {
-  margin-left: auto;
-  width: 40px;
-  height: 40px;
-  fill: currentColor;
-  cursor: pointer;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.header__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
-.mobile-icon:hover {
-  fill: #2196f3;
+.header__button.icon-close {
+  display: none;
+}
+.header__button.is-open .icon-close {
+  display: block;
+}
+.header__button.is-open .mobile-icon {
+  display: none;
 }
 
 .hero {
@@ -624,21 +630,6 @@ img {
 }
 .header__link:hover, .header__link:focus, .header__link-active {
   color: #2196f3;
-}
-
-.mobile__cross-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 20px;
-  margin-top: 21px;
-  margin-right: 25px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mobile__cross-icon:hover, .mobile__cross-icon:focus {
-  fill: #2196f3;
 }
 
 .mobile__contacts-item {
