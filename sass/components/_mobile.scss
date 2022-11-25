@@ -11,7 +11,11 @@
     padding-top: 48px;
     margin-left: 40px;
 }
-
+.mobile__block {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 48px;
+}
 .header__item {
     margin-top: 32px;
 
@@ -51,6 +55,7 @@
     margin-left: 40px;
 
     &:last-child {
+    margin-left: 40px ;
     margin-top: 32px;}
 }
 .mobile__tel {
@@ -70,6 +75,7 @@
     color: $secondary-text-color;
 }
 .mobile__list {
+    margin-left: 40px;
     display: flex;
     align-items: center;
 }
@@ -81,12 +87,17 @@
     line-height: 22px;
     letter-spacing: 0.02em;
     color: $hover-color;
-}
-.mobile__link::after {
+
+    &::after {
     position: relative;
     content: "";
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
     width: 22px;
     transform: rotate(90deg);
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid rgba(33, 33, 33, 0.2);}
+}
+.mobile__wrapper {
+    margin-top: 64px;
 }
