@@ -22,10 +22,16 @@
         <a class="logo" href="./index.html"
           >Web<span class="logo-prefix">Studio</span></a
         >
-        <button class="header__button js-open-menu" type="button">
+        <button class="header__button js-open-menu" 
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="header__mobile-icon">
+            <use href="./images/sprite.svg#mobile-icon"></use>
+          </svg>
         </button>
         </header>
-        <div class="mobile">
+        <!-- МЕНЮ ДЛЯ МОБИЛКИ -->
+        <div class="mobile js-menu-container">
           <nav>
             <ul class="header__menu">
               <li class="header__item">
