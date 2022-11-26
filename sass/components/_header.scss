@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    content: "";
     border-bottom: 1px solid #ececec;
 }
 
@@ -28,18 +30,10 @@
     color: $primary-text-color;
 }
 .header__button {
+    position: relative;
+    content: "";
+    margin-left: auto;
     display: inline-flex;
-    margin: 0;
-    padding: 0;
     border: none;
     background-color: transparent;
-
-    &.icon-close {
-    display: none;}
-
-    &.is-open .icon-close {
-    display: block;}
-
-    &.is-open .mobile-icon {
-    display: none;}
 }
