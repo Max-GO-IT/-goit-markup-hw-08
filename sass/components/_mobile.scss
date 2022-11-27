@@ -20,6 +20,18 @@
 .mobile.is-open {
     transform: translateX(0);
 }
+.mobile__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 21px;
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+}
 .header__menu {
     padding-top: 48px;
     margin-left: 40px;
