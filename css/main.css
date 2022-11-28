@@ -84,6 +84,8 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
   margin-left: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
