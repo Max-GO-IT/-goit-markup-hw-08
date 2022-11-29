@@ -141,15 +141,16 @@
 }
 .modal__checkbox-text {
     display: flex;
+    align-items: center;
+    width: 100%;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
-    color: $secondary-text-color;
-    margin-left: auto;
+    // margin-left: auto;
     margin-top: 20px;
-    align-items: center;
+    color: $secondary-text-color;
 }
 .modal__checkbox-text span {
     display: flex;
