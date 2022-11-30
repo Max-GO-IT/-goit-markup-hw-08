@@ -651,8 +651,8 @@ img {
 }
 
 .mobile__block {
-  width: 100%;
   position: absolute;
+  width: 100%;
   bottom: 0;
   margin-bottom: 48px;
 }
@@ -697,9 +697,24 @@ img {
           align-items: center;
 }
 
+.mobile__item {
+  position: relative;
+  margin: 0 10px;
+}
+.mobile__item:first-child {
+  margin-left: 0;
+}
+.mobile__item::after {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .mobile__link {
-  margin-left: 10px;
-  margin-right: 10px;
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -707,19 +722,6 @@ img {
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-.mobile__link:first-child {
-  margin-left: 0;
-}
-.mobile__link::after {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
-  width: 22px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .backdrop {
