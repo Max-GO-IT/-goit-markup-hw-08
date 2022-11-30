@@ -1,5 +1,9 @@
 .specialization {
     padding-top: 0;
+   
+    @media screen {
+        display: none;
+    }
 }
 
 .specialization__title {

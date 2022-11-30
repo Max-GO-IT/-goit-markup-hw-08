@@ -1006,6 +1006,11 @@ img {
 .specialization {
   padding-top: 0;
 }
+@media screen {
+  .specialization {
+    display: none;
+  }
+}
 
 .specialization__title {
   font-weight: 700;
