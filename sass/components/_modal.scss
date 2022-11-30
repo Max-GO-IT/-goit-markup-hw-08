@@ -48,17 +48,17 @@
     padding: 40px;
 }
 .modal__text {
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15px;
-    text-align: center;
+    line-height: 30px;
     letter-spacing: 0.03em;
     color: $primary-text-color;
 }
-.modal__block {
-    margin-top: 22px;
-}
+// .modal__block {
+//     margin-top: 22px;
+// }
 .modal__item {
     margin-top: 28px;
 }
@@ -141,14 +141,11 @@
 }
 .modal__checkbox-text {
     display: flex;
-    align-items: center;
-    width: 100%;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.03em;
-    // margin-left: auto;
     margin-top: 20px;
     color: $secondary-text-color;
 }
@@ -167,7 +164,7 @@
     height: 8px;
     fill: $white-color;
 }
-.modal__checkbox:checked+.modal__checkbox-text span {
+.modal__checkbox:checked + .modal__checkbox-text span {
     background-color: $hover-color;
     border: none;
 }
