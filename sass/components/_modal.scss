@@ -137,68 +137,36 @@
     color: rgba(117, 117, 117, 0.5);}
 }
 .modal__checkbox {
-    // display: none;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    flex-shrink: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    border-radius: 2px;
+    display: none;
 }
 .modal__checkbox-text {
-    // display: flex;
-    // font-style: normal;
-    // font-weight: 400;
-    // font-size: 12px;
-    // line-height: 14px;
-    // letter-spacing: 0.03em;
-    // margin-top: 20px;
-    // color: $secondary-text-color;
-
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    color: $secondary-text-color;
+}
+.modal__checkbox-text span {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
-}
-// .modal__checkbox-text span {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin-right: 7px;
-//     width: 16px;
-//     height: 15px;
-//     border-radius: 2px;
-//     border: 2px solid $primary-text-color;
-// }
-.modal__nothing {
-    display: inline-flex;
-    align-items: center;
     justify-content: center;
+    margin-right: 7px;
     width: 16px;
     height: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    border-radius: 2px;
     border: 2px solid $primary-text-color;
 }
 .modal__check {
-    // width: 11px;
-    // height: 8px;
-    // fill: $white-color;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
+    width: 11px;
+    height: 8px;
+    fill: $white-color;
 }
-// .modal__checkbox:checked + .modal__checkbox-text span {
-//     background-color: $hover-color;
-//     border: none;
-// }
-.modal__checkbox::checked + .modal__nothing .modal__check {
-    opacity: 1;
-    fill: $hover-color;
+.modal__checkbox:checked + .modal__checkbox-text span {
+    background-color: $hover-color;
+    border: none;
 }
 .submit-link {
     font-style: normal;
