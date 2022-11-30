@@ -46,6 +46,7 @@
 }
 .mobile__block {
     position: absolute;
+    content: "";
     width: 100%;
     bottom: 0;
     margin-bottom: 48px;
@@ -81,6 +82,23 @@
     display: flex;
     align-items: center;
 }
+.mobile__item {
+    position: relative;
+    content: "";
+    margin: 0 10px;
+
+    &:first-child {
+    margin-left: 0;}
+    
+    &::after {
+    position: absolute;
+    content: "";
+    bottom: 50%;
+    display: inline-block;
+    width: 22px;
+    transform: rotate(90deg);
+    border: 1px solid rgba(33, 33, 33, 0.2);}
+}
 .mobile__link {
     text-decoration: none;
     font-style: normal;
@@ -89,15 +107,4 @@
     line-height: 22px;
     letter-spacing: 0.02em;
     color: $hover-color;
-
-    &:first-child {
-    margin-left: 0;}
-    
-    &::after {
-    position: absolute;
-    display: inline-block;
-    vertical-align: middle;
-    width: 22px;
-    transform: rotate(90deg);
-    border: 1px solid rgba(33, 33, 33, 0.2);}
 }
