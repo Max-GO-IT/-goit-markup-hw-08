@@ -1,7 +1,6 @@
 .specialization {
-    padding-top: 0;
-   
-    @media screen {
+    padding-top: 0;  
+    @media screen and (min-width: 479px) {
         display: none;
     }
 }

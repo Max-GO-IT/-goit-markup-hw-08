@@ -65,8 +65,8 @@
     color: $icons-color;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color;
 
-.ourteam__icon-link:hover,
-.ourteam__icon-link:focus {
+    &:hover,
+    &:focus {
     background-color: $hover-color;
     color: $white-color;}
 }

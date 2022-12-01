@@ -34,10 +34,32 @@ img {
 }
 
 .container {
-    width: 480px;
-    margin: 0 auto;
-    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and(max-width:479px) {
+        width: 100vw;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+         @media screen and (min-width:$mobile) {
+             width: 480px;
+         }
+    
+         @media screen and (min-width:$tablet) {
+             width: 768px;
+    
+         }
+    
+         @media screen and (min-width:$desktop) {
+             width: 1200px;
+    
+         }
 }
+
 .section {
    padding-top: 60px;
    padding-bottom: 60px; 
