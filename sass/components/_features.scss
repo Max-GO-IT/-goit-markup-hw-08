@@ -1,17 +1,10 @@
-@media screen and (min-width:$tablet) {
-    .section__item-wrapper{
-        width: 354px;
-    }
-}
-
 .section__item-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 450px;
     height: 120px;
-    background-color: $button-background-color;
-}
+    background-color: $button-background-color;}
 
 .section__title {
     margin-bottom: 10px;
