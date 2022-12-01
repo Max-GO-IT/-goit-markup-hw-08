@@ -1,3 +1,9 @@
+@media screen and (min-width:$tablet) {
+    .section__item-wrapper{
+        width: 354px;
+    }
+}
+
 .section__item-wrapper {
     display: flex;
     align-items: center;
