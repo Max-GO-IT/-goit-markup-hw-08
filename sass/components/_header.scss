@@ -6,6 +6,10 @@
     height: 60px;
     display: flex;
     align-items: center;
+
+    @media screen and (min-width:$tablet) {
+        height: 80px;
+    }
 }
 
 .logo {
@@ -42,6 +46,10 @@
         &:hover,
         &:focus {
         fill:$hover-color;}
+
+        @media screen and (min-width:$tablet) {
+            display: none;
+        }
 }
 .header__mobile-icon {
     width: 40px;

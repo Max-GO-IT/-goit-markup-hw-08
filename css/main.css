@@ -83,6 +83,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .header__block {
+    height: 80px;
+  }
+}
 
 .logo {
   font-family: Raleway;
@@ -121,6 +126,11 @@ img {
 }
 .header__button:hover, .header__button:focus {
   fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
 }
 
 .header__mobile-icon {
