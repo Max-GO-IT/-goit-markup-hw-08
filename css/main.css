@@ -667,12 +667,29 @@ img {
   padding-top: 48px;
   margin-left: 40px;
 }
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 88px;
+    padding: 0;
+  }
+}
 
 .header__item {
   margin-top: 32px;
 }
 .header__item:first-child {
   margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .header__item {
+    margin-top: 0;
+  }
 }
 
 .header__link {
@@ -687,6 +704,12 @@ img {
 }
 .header__link:hover, .header__link:focus, .header__link-active {
   color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .header__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .mobile__block {
