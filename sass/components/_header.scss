@@ -47,10 +47,6 @@
         &:hover,
         &:focus {
         fill:$hover-color;}
-
-        @media screen and (min-width:$tablet) {
-            display: none;
-        }
 }
 .header__mobile-icon {
     width: 40px;
