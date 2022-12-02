@@ -1,15 +1,26 @@
+.section__features {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.section__item {
+    width: 354px;
+}
 .section__item-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;
+    width: 354px;
     height: 120px;
-    background-color: $button-background-color;}
+    background-color: $button-background-color;
+    
+    @media screen and (min-width:$tablet){
+        width: 354px;
+    }
+}
 
 .section__title {
-    margin-bottom: 10px;
     margin-top: 30px;
-    margin: 0 auto;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -19,6 +30,7 @@
 }
 
 .section__text {
+    margin-top: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;

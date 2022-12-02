@@ -174,8 +174,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile_hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile_hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero_tablet.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_tablet.jpg);
 }
 
 .hero__title {
@@ -210,6 +210,19 @@ img {
   cursor: pointer;
 }
 
+.section__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.section__item {
+  width: 354px;
+}
+
 .section__item-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,15 +233,18 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
+  width: 354px;
   height: 120px;
   background-color: #f5f4fa;
 }
+@media screen and (min-width: 768px) {
+  .section__item-wrapper {
+    width: 354px;
+  }
+}
 
 .section__title {
-  margin-bottom: 10px;
   margin-top: 30px;
-  margin: 0 auto;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -238,6 +254,7 @@ img {
 }
 
 .section__text {
+  margin-top: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
