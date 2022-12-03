@@ -3,9 +3,12 @@
     padding-bottom: 60px;
     background: #2f303a;
 }
-@media screen and (min-width:$tablet){
+
+@media screen and (min-width:$tablet) {
     .footer__container {
-        display: flex;}
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .footer__location {
@@ -13,9 +16,10 @@
    align-items: center;
    flex-direction: column;
 
-   @media screen and (min-width:$tablet){
-    margin-left: 76px;
-   }
+@media screen and (min-width:$tablet) {
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 
 .studio {
@@ -31,8 +35,8 @@
 .footer__list {
     margin-top: 20px;
 }
-@media screen and (min-width:$tablet){
-    .footer__list-list {
+@media screen and (min-width:$tablet) {
+    .footer__nothing {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,7 +84,13 @@
 
 .footer__social {
   margin: 0 auto;
-  margin-top: 60px;  
+  margin-top: 60px; 
+  
+  @media screen and (min-width:$tablet) {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .call {
@@ -136,6 +146,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width:$tablet) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .footer__submit-text {
