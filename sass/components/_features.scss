@@ -2,6 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     gap:30px;
+
+    @media screen and (min-width:$desktop){
+        flex-wrap: nowrap;
+    }
 }
 .section__item {
     width: 354px;
@@ -16,6 +20,9 @@
     
     @media screen and (min-width:$tablet){
         width: 354px;
+    }
+    @media screen and (min-width:$desktop){
+        width: 270px;
     }
 }
 
@@ -34,6 +41,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 00.03em;
+    letter-spacing: 0.03em;
     color: $secondary-text-color;
 }
