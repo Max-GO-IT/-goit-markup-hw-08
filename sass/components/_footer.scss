@@ -3,15 +3,19 @@
     padding-bottom: 60px;
     background: #2f303a;
 }
-
-// .footer__container {
-//     display: flex;
-// }
+@media screen and (min-width:$tablet){
+    .footer__container {
+        display: flex;}
+}
 
 .footer__location {
    display: flex;
    align-items: center;
    flex-direction: column;
+
+   @media screen and (min-width:$tablet){
+    margin-left: 76px;
+   }
 }
 
 .studio {
@@ -26,6 +30,13 @@
 
 .footer__list {
     margin-top: 20px;
+}
+@media screen and (min-width:$tablet){
+    .footer__list-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__item {

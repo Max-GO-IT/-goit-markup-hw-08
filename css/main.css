@@ -417,6 +417,13 @@ img {
   background: #2f303a;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .footer__location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,6 +435,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__location {
+    margin-left: 76px;
+  }
 }
 
 .studio {
@@ -444,6 +456,20 @@ img {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__list-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .footer__item {
   margin-bottom: 9px;
 }
