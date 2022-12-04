@@ -24,3 +24,22 @@
     width: 19px;
     height: 19px;
 }
+.mobile__list {
+    margin-top: 48px;
+    margin-left: 40px;
+}
+.mobile__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &-active {
+        color: $hover-color;
+    }
+}
