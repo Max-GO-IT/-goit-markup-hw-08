@@ -8,13 +8,20 @@
     }
 }
 .section__item {
-    width: 354px;
+    width: 450px;
+
+    @media screen and (min-width:$tablet){
+        width: 354px;
+    }
+    @media screen and (min-width:$desktop){
+        width: 270px;
+    }
 }
 .section__item-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 354px;
+    width: 450px;
     height: 120px;
     background-color: $button-background-color;
     
@@ -27,6 +34,7 @@
 }
 
 .section__title {
+    text-align: center;
     margin-top: 30px;
     text-transform: uppercase;
     font-weight: 700;
