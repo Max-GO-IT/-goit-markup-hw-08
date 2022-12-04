@@ -9,6 +9,7 @@
 
     @media screen and (min-width:$desktop){
         height: 80px;
+        justify-content: center;
     }
 }
 
@@ -90,7 +91,7 @@
     &:focus {
         color: $hover-color;
         }
-            &-active::after {
+    &-active::after {
     position: absolute;
     content: " ";
     margin-top: 19px;
