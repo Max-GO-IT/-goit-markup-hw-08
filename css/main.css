@@ -320,9 +320,6 @@ img {
 }
 
 .hero__title {
-  margin-left: auto;
-  margin-right: auto;
-  width: 696px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
@@ -330,6 +327,18 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 60px;
+    width: 696px;
+  }
 }
 
 .hero__button {
