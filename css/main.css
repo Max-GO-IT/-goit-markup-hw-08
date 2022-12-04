@@ -1315,4 +1315,9 @@ img {
 .mobile.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.mobile__cross-icon {
+  width: 19px;
+  height: 19px;
 }/*# sourceMappingURL=main.css.map */
