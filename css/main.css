@@ -133,9 +133,10 @@ img {
   height: 40px;
 }
 
-.header__menu {
-  padding-top: 48px;
-  margin-left: 40px;
+@media screen and (min-width: 480px) {
+  .header__menu {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .header__menu {
@@ -173,6 +174,16 @@ img {
 
 .header__contacts {
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .header__contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header__contacts {
@@ -1275,4 +1286,33 @@ img {
   line-height: 16px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.mobile.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }/*# sourceMappingURL=main.css.map */

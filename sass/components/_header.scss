@@ -57,8 +57,9 @@
     height: 40px;
 }
 .header__menu {
-    padding-top: 48px;
-    margin-left: 40px;
+    @media screen and (min-width:$mobile){
+        display: none;
+    }
 
     @media screen and (min-width:$tablet) {
         display: flex;
@@ -90,6 +91,12 @@
 .header__contacts {
     margin-left: auto;
 
+    @media screen and (min-width:$mobile){
+        display: none;
+    }
+    @media screen and (min-width:$tablet){
+        display: block;
+    }
     @media screen and (min-width:$desktop){
         display: flex;
         align-items: center;
