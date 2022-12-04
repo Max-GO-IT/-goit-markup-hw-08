@@ -1333,9 +1333,74 @@ img {
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
-  color: #212121;
   text-decoration: none;
+  color: #212121;
 }
 .mobile__link:hover, .mobile__link:focus, .mobile__link-active {
   color: #2196f3;
+}
+
+.mobile__contacts-list {
+  margin-left: 40px;
+}
+
+.mobile__contacts-item {
+  margin-top: 32px;
+}
+.mobile__contacts-item:first-child {
+  margin-top: 0;
+}
+
+.mobile__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.mobile__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+}
+
+.mobile__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+  margin-left: 40px;
+}
+
+.mobile__social-item {
+  margin: 0 10px;
+}
+.mobile__social-item:first-child {
+  margin-left: 0;
+}
+
+.mobile__social-link {
+  position: relative;
+  content: "";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2196f3;
+}
+.mobile__social-link::after {
+  position: absolute;
+  content: "";
+  bottom: 50%;
+  display: inline-block;
+  width: 22px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }/*# sourceMappingURL=main.css.map */
