@@ -516,6 +516,12 @@ img {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer__container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .footer__location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,6 +700,11 @@ img {
   .footer__submit {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__submit {
+    margin-top: 0;
   }
 }
 

@@ -9,6 +9,11 @@
         display: flex;
         flex-wrap: wrap;
     }
+    @media screen and (min-width:$desktop){
+        .footer__container {
+            flex-wrap: nowrap;
+        }
+    }
 }
 
 .footer__location {
@@ -18,8 +23,7 @@
 
 @media screen and (min-width:$tablet) {
     margin-left: auto;
-    margin-right: auto;
-}
+    margin-right: auto;}
 }
 
 .studio {
@@ -150,6 +154,9 @@
     @media screen and (min-width:$tablet) {
         margin-left: auto;
         margin-right: auto;
+    }
+    @media screen and (min-width:$desktop){
+        margin-top: 0;
     }
 }
 
