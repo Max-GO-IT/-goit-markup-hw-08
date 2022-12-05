@@ -10,6 +10,20 @@
     text-align: center;
     color: $primary-text-color;
 }
+.ourteam__list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width:$tablet){
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    img {
+        width: 354px;
+        height: 374px;
+    }
+}
 
 .ourteam__item {
     background: $white-color;
