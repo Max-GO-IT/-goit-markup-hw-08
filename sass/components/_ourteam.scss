@@ -23,7 +23,14 @@
         width: 354px;
         height: 374px;
     }
-}
+    @media screen and (min-width:$mobile){
+        display: block;
+    }
+        img {
+            width: 450px;
+            height: 460px;
+        }
+    }
 
 .ourteam__item {
     background: $white-color;
