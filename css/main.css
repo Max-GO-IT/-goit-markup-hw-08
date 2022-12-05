@@ -477,18 +477,10 @@ img {
     gap: 30px;
   }
 }
-.ourteam__list img {
-  width: 354px;
-  height: 374px;
-}
 @media screen and (min-width: 480px) {
   .ourteam__list {
     display: block;
   }
-}
-.ourteam__list img {
-  width: 450px;
-  height: 460px;
 }
 
 .ourteam__item {
@@ -1294,7 +1286,7 @@ img {
 .specialization__item {
   margin-right: 30px;
 }
-.specialization__item .specialization__item:last-child {
+.specialization__item:last-child {
   margin-right: 0;
 }
 
