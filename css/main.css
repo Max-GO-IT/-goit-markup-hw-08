@@ -477,11 +477,6 @@ img {
     gap: 30px;
   }
 }
-@media screen and (min-width: 480px) {
-  .ourteam__list {
-    display: block;
-  }
-}
 
 .ourteam__item {
   background: #ffffff;
