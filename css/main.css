@@ -469,13 +469,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media screen and (min-width: 768px) {
-  .ourteam__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
+  gap: 30px;
 }
 
 .ourteam__item {
