@@ -13,13 +13,13 @@
 .ourteam__list {
     margin-top: 50px;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 30px; 
-    
-    // @media screen and (min-width:$tablet){
-    //     flex-wrap: wrap;
-    //     gap: 30px;
-    // }
+
+    @media screen and (min-width:$tablet) and(max-width: 1199px){
+        flex-wrap: wrap;
+    }
     // @media screen and (min-width:$mobile) {
     //     display: block;
     // }
