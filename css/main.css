@@ -717,6 +717,11 @@ img {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__location {
+    display: block;
+  }
+}
 
 .studio {
   font-family: Raleway;
@@ -749,9 +754,14 @@ img {
 .footer__item {
   margin-bottom: 9px;
 }
-
 .footer__item:last-child {
   margin-bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+  .footer__item {
+    display: block;
+    margin-right: auto;
+  }
 }
 
 .footer__address {

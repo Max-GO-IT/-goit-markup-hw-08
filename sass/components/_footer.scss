@@ -23,9 +23,12 @@
 
 @media screen and (min-width:$tablet) {
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
 }
-
+@media screen and (min-width:$desktop) {
+    display: block;
+   }
+}
 .studio {
     font-family: Raleway;
     font-weight: 700;
@@ -49,10 +52,14 @@
 
 .footer__item {
     margin-bottom: 9px;
-}
 
-.footer__item:last-child {
+    &:last-child {
     margin-bottom: 0;
+  }
+  @media screen and (min-width:$desktop) {
+        display: block;
+        margin-right: auto;
+    }
 }
 
 .footer__address {
