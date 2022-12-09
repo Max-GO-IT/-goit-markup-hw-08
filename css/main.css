@@ -1322,7 +1322,7 @@ img {
 .specialization {
   padding-top: 0;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .specialization {
     display: none;
   }
