@@ -310,6 +310,12 @@ img {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
 
 .smartphone {
   width: 10px;
@@ -319,6 +325,11 @@ img {
   fill: currentColor;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .smartphone {
+    height: 16px;
+  }
 }
 
 .hero {
