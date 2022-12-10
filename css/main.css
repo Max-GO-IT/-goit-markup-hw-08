@@ -183,7 +183,7 @@ img {
 .header__contacts {
   margin-left: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 0) and (max-width: 768px) {
   .header__contacts {
     display: none;
   }
@@ -245,6 +245,11 @@ img {
   height: 4px;
   border-radius: 2px;
   background: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .header__link-active::after {
+    top: 28px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header__link {
@@ -1399,7 +1404,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .mobile {
     display: none;
   }
