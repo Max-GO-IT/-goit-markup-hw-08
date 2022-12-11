@@ -142,7 +142,7 @@ img {
   height: 40px;
 }
 
-@media screen and (min-width: 319px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header__menu {
     display: none;
   }
