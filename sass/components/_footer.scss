@@ -48,7 +48,6 @@
         align-items: center;
 }
 
-
 .footer__item {
     margin-bottom: 9px;
 
@@ -209,7 +208,7 @@
         color: rgba(255, 255, 255, 0.6);}
 
         @media screen and (max-width: 479px){
-            width: 100vw;
+            width: 95vw;
         }
         @media screen and (min-width:$desktop){
             width: 358px;
