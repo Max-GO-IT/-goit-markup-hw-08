@@ -75,31 +75,34 @@
     display: flex;
     margin-top: 64px;
     margin-left: 40px;
-}
-.mobile__social-item {
-    margin: 0 10px;
 
-    &:first-child {
-        margin-left: 0;
+    @media screen and (min-width: 200px){
+        flex-wrap: wrap;
     }
 }
-.mobile__social-link {
+.mobile__social-item {
     position: relative;
     content: "";
+    margin: 0 10px;
+
+    &::after {
+    position: absolute;
+    content: "";
+    bottom: 50%;
+    display: inline-block;
+    width: 22px;
+    transform: rotate(90deg);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    }
+}
+.mobile__social-useless-item {
+    margin-left: 10px;
+}
+.mobile__social-link {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $hover-color;
-
-    &::after {
-        position: absolute;
-        content: "";
-        bottom: 50%;
-        display: inline-block;
-        width: 22px;
-        transform: rotate(90deg);
-        border: 1px solid rgba(33, 33, 33, 0.2);
-    }
 }
